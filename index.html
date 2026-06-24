@@ -1,0 +1,2847 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SPI Secure Solutions - Professional CCTV & Security Solutions in Telangana & Andhra Pradesh. 4+ years experience, 100+ installations. IP cameras, analog cameras, NVR, DVR, remote monitoring & maintenance services.">
+    <meta name="keywords" content="CCTV installation Hyderabad, security cameras Telangana, IP camera installation, analog camera systems, NVR DVR installation, security solutions Andhra Pradesh, remote monitoring, CCTV maintenance">
+    <meta name="author" content="SPI Secure Solutions">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="SPI Secure Solutions - Professional CCTV & Security Solutions">
+    <meta property="og:description" content="Your Trusted Security Partner with 4+ years experience and 100+ successful installations across Telangana & Andhra Pradesh.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_IN">
+    
+    <title>SPI Secure Solutions | Professional CCTV & Security Solutions in Hyderabad</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-dark: #0a1628;
+            --primary-blue: #1a365d;
+            --secondary-blue: #2c5282;
+            --accent-gold: #d69e2e;
+            --accent-orange: #ed8936;
+            --text-light: #f7fafc;
+            --text-gray: #a0aec0;
+            --white: #ffffff;
+            --gradient-dark: linear-gradient(135deg, #0a1628 0%, #1a365d 100%);
+            --gradient-accent: linear-gradient(135deg, #d69e2e 0%, #ed8936 100%);
+            --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --shadow-xl: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(10, 22, 40, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            padding: 10px 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--white);
+            border: 1px solid rgba(214, 158, 46, 0.45);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+        }
+
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+            color: var(--white);
+            white-space: nowrap;
+        }
+
+        .logo-text span {
+            color: var(--accent-gold);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-light);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: var(--gradient-accent);
+            color: var(--primary-dark);
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(214, 158, 46, 0.3);
+        }
+
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--white);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 120px 20px 80px;
+            background: 
+                linear-gradient(135deg, rgba(10, 22, 40, 0.95) 0%, rgba(26, 54, 93, 0.9) 100%),
+                url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(214, 158, 46, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(237, 137, 54, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(214, 158, 46, 0.85), transparent);
+            box-shadow: 0 0 24px rgba(214, 158, 46, 0.55);
+            animation: scanLine 5s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 900px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-security-showcase {
+            position: absolute;
+            right: clamp(18px, 6vw, 90px);
+            bottom: clamp(30px, 8vw, 90px);
+            width: min(340px, 28vw);
+            min-width: 260px;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .camera-orbit {
+            position: relative;
+            aspect-ratio: 1 / 0.82;
+            border: 1px solid rgba(214, 158, 46, 0.25);
+            border-radius: 18px;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(214, 158, 46, 0.18), transparent 30%),
+                linear-gradient(135deg, rgba(10, 22, 40, 0.92), rgba(26, 54, 93, 0.95));
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45), inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .camera-orbit::before {
+            content: '';
+            position: absolute;
+            inset: 14px;
+            border: 1px solid rgba(214, 158, 46, 0.35);
+            border-radius: 12px;
+        }
+
+        .camera-orbit::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(214, 158, 46, 0.24) 48%, transparent 55%);
+            animation: cameraSweep 3.5s linear infinite;
+        }
+
+        .live-feed-grid {
+            position: absolute;
+            inset: 44px 18px 46px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            z-index: 1;
+        }
+
+        .feed-tile {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 1px solid rgba(214, 158, 46, 0.2);
+            background:
+                linear-gradient(120deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0)),
+                linear-gradient(135deg, #243b53, #0a1628);
+        }
+
+        .feed-tile::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px),
+                linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+            background-size: 22px 22px;
+            opacity: 0.45;
+        }
+
+        .feed-tile::after {
+            content: '';
+            position: absolute;
+            left: 12%;
+            right: 12%;
+            bottom: 14%;
+            height: 28%;
+            border-radius: 50% 50% 8px 8px;
+            background: rgba(214, 158, 46, 0.22);
+            box-shadow:
+                -36px 6px 0 rgba(247, 250, 252, 0.12),
+                34px -8px 0 rgba(247, 250, 252, 0.1);
+        }
+
+        .camera-device {
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            z-index: 3;
+            width: 118px;
+            height: 54px;
+            transform: translateX(-50%);
+            border-radius: 16px 16px 28px 28px;
+            background: linear-gradient(135deg, #eef3f7, #9aa8b5);
+            border: 3px solid rgba(255, 255, 255, 0.75);
+            box-shadow: 0 16px 35px rgba(0, 0, 0, 0.35);
+        }
+
+        .camera-device::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 42px;
+            height: 42px;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background:
+                radial-gradient(circle at 52% 48%, #101820 0 28%, #243b53 30% 44%, #0a1628 47% 100%);
+            box-shadow: inset 0 0 10px rgba(214, 158, 46, 0.7);
+        }
+
+        .camera-device::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -18px;
+            width: 46px;
+            height: 18px;
+            transform: translateX(-50%);
+            border-radius: 0 0 12px 12px;
+            background: #718096;
+        }
+
+        .security-chip {
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            border-radius: 999px;
+            background: rgba(10, 22, 40, 0.82);
+            border: 1px solid rgba(214, 158, 46, 0.32);
+            color: var(--white);
+            font-size: 0.78rem;
+            font-weight: 700;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+        }
+
+        .security-chip i {
+            color: var(--accent-gold);
+        }
+
+        .chip-live {
+            top: 18px;
+            left: 18px;
+        }
+
+        .chip-night {
+            right: 18px;
+            bottom: 18px;
+        }
+
+        .hero-trust-strip {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 28px auto 0;
+        }
+
+        .hero-trust-strip span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 14px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: var(--text-light);
+            font-size: 0.86rem;
+            font-weight: 600;
+        }
+
+        .hero-trust-strip i {
+            color: var(--accent-gold);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(214, 158, 46, 0.15);
+            border: 1px solid rgba(214, 158, 46, 0.3);
+            padding: 10px 25px;
+            border-radius: 50px;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+            color: var(--accent-gold);
+        }
+
+        .hero-badge i {
+            font-size: 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 span {
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-gray);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--gradient-accent);
+            color: var(--primary-dark);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(214, 158, 46, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--accent-gold);
+        }
+
+        .btn-secondary:hover {
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: var(--white);
+        }
+
+        .btn-whatsapp:hover {
+            background: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.3);
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--primary-blue);
+            padding: 60px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stats::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(214, 158, 46, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+        }
+
+        .stat-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--accent-gold);
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: var(--text-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 100px 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-tag {
+            display: inline-block;
+            background: rgba(214, 158, 46, 0.15);
+            color: var(--accent-gold);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .section-title span {
+            color: var(--accent-gold);
+        }
+
+        .section-desc {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--gradient-dark);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            object-position: center 34%;
+            border-radius: 20px;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: 20px;
+            bottom: 20px;
+            border: 3px solid var(--accent-gold);
+            border-radius: 20px;
+            z-index: -1;
+        }
+
+        .experience-badge {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            background: var(--gradient-accent);
+            color: var(--primary-dark);
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .experience-badge .number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            display: block;
+        }
+
+        .experience-badge .text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+        }
+
+        .about-content h2 span {
+            color: var(--accent-gold);
+        }
+
+        .about-content p {
+            color: var(--text-gray);
+            margin-bottom: 30px;
+            font-size: 1.05rem;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .about-feature i {
+            width: 35px;
+            height: 35px;
+            background: rgba(214, 158, 46, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-gold);
+            font-size: 0.9rem;
+        }
+
+        .about-feature span {
+            font-weight: 500;
+            color: var(--text-light);
+        }
+
+        /* Services Section */
+        .services {
+            background: var(--primary-dark);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: linear-gradient(145deg, rgba(26, 54, 93, 0.5) 0%, rgba(44, 82, 130, 0.3) 100%);
+            border: 1px solid rgba(214, 158, 46, 0.1);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-accent);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(214, 158, 46, 0.3);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(214, 158, 46, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 2rem;
+            color: var(--accent-gold);
+            transition: all 0.4s ease;
+        }
+
+        .service-card:hover .service-icon {
+            background: var(--gradient-accent);
+            color: var(--primary-dark);
+            transform: scale(1.1);
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--white);
+        }
+
+        .service-card p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        /* Why Choose Us */
+        .why-us {
+            background: var(--primary-blue);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-us::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(214, 158, 46, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .why-card {
+            background: rgba(10, 22, 40, 0.5);
+            border: 1px solid rgba(214, 158, 46, 0.1);
+            border-radius: 15px;
+            padding: 35px 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .why-card:hover {
+            background: rgba(10, 22, 40, 0.8);
+            border-color: rgba(214, 158, 46, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .why-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-accent);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+        }
+
+        .why-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--white);
+        }
+
+        .why-card p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        /* Industries Section */
+        .industries {
+            background: var(--gradient-dark);
+        }
+
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .industry-card {
+            background: rgba(26, 54, 93, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 35px 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .industry-card:hover {
+            background: rgba(214, 158, 46, 0.1);
+            border-color: var(--accent-gold);
+            transform: scale(1.05);
+        }
+
+        .industry-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(214, 158, 46, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+            transition: all 0.3s ease;
+        }
+
+        .industry-card:hover .industry-icon {
+            background: var(--gradient-accent);
+            color: var(--primary-dark);
+        }
+
+        .industry-card h4 {
+            font-size: 1.05rem;
+            color: var(--white);
+        }
+
+        /* Products Section */
+        .products {
+            background: var(--primary-dark);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: linear-gradient(145deg, rgba(26, 54, 93, 0.6) 0%, rgba(44, 82, 130, 0.3) 100%);
+            border: 1px solid rgba(214, 158, 46, 0.15);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            border-color: rgba(214, 158, 46, 0.4);
+        }
+
+        .product-image {
+            height: 200px;
+            background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--accent-gold);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d69e2e' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .product-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(10, 22, 40, 0.08), rgba(10, 22, 40, 0.82));
+            z-index: 1;
+        }
+
+        .product-image i {
+            position: relative;
+            z-index: 2;
+            width: 88px;
+            height: 88px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(10, 22, 40, 0.72);
+            border: 1px solid rgba(214, 158, 46, 0.35);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+        }
+
+        .product-card:nth-child(1) .product-image {
+            background-image: linear-gradient(135deg, rgba(10, 22, 40, 0.15), rgba(10, 22, 40, 0.45)), url('https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=900&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-card:nth-child(2) .product-image {
+            background-image: linear-gradient(135deg, rgba(10, 22, 40, 0.15), rgba(10, 22, 40, 0.45)), url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-card:nth-child(3) .product-image {
+            background-image: linear-gradient(135deg, rgba(10, 22, 40, 0.15), rgba(10, 22, 40, 0.45)), url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-card:nth-child(4) .product-image {
+            background-image: linear-gradient(135deg, rgba(10, 22, 40, 0.15), rgba(10, 22, 40, 0.45)), url('https://images.unsplash.com/photo-1551703599-6b3e8379aa8c?auto=format&fit=crop&w=900&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-card:nth-child(5) .product-image {
+            background-image: linear-gradient(135deg, rgba(10, 22, 40, 0.15), rgba(10, 22, 40, 0.45)), url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=900&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-card:nth-child(6) .product-image {
+            background-image: linear-gradient(135deg, rgba(10, 22, 40, 0.15), rgba(10, 22, 40, 0.45)), url('https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=900&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-content {
+            padding: 25px;
+        }
+
+        .product-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--white);
+        }
+
+        .product-content p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .product-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .product-feature {
+            background: rgba(214, 158, 46, 0.1);
+            color: var(--accent-gold);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background: var(--primary-blue);
+            position: relative;
+        }
+
+        .testimonials::before {
+            content: '"';
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 15rem;
+            color: rgba(214, 158, 46, 0.05);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: rgba(10, 22, 40, 0.6);
+            border: 1px solid rgba(214, 158, 46, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 4rem;
+            color: var(--accent-gold);
+            opacity: 0.3;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .testimonial-stars {
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-text {
+            color: var(--text-light);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .author-avatar {
+            width: 55px;
+            height: 55px;
+            background: var(--gradient-accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: var(--primary-dark);
+            font-weight: 700;
+        }
+
+        .author-info h5 {
+            font-size: 1.05rem;
+            color: var(--white);
+            margin-bottom: 3px;
+        }
+
+        .author-info span {
+            font-size: 0.85rem;
+            color: var(--text-gray);
+        }
+
+        /* FAQ Section */
+        .faq {
+            background: var(--gradient-dark);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: rgba(26, 54, 93, 0.4);
+            border: 1px solid rgba(214, 158, 46, 0.1);
+            border-radius: 15px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: rgba(214, 158, 46, 0.3);
+        }
+
+        .faq-question {
+            padding: 25px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(214, 158, 46, 0.05);
+        }
+
+        .faq-question h4 {
+            font-size: 1.05rem;
+            color: var(--white);
+            font-weight: 600;
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .faq-icon {
+            width: 35px;
+            height: 35px;
+            background: rgba(214, 158, 46, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-gold);
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .faq-item.active .faq-icon {
+            background: var(--gradient-accent);
+            color: var(--primary-dark);
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+        }
+
+        .faq-answer p {
+            padding: 0 30px 25px;
+            color: var(--text-gray);
+            line-height: 1.7;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--primary-dark);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 50px;
+        }
+
+        .contact-info {
+            background: linear-gradient(145deg, rgba(26, 54, 93, 0.6) 0%, rgba(44, 82, 130, 0.3) 100%);
+            border: 1px solid rgba(214, 158, 46, 0.15);
+            border-radius: 25px;
+            padding: 50px 40px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: var(--white);
+        }
+
+        .contact-info > p {
+            color: var(--text-gray);
+            margin-bottom: 35px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .contact-icon {
+            width: 55px;
+            height: 55px;
+            background: rgba(214, 158, 46, 0.15);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: var(--accent-gold);
+            flex-shrink: 0;
+        }
+
+        .contact-text h5 {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .contact-text p, .contact-text a {
+            color: var(--white);
+            font-size: 1.05rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-text a:hover {
+            color: var(--accent-gold);
+        }
+
+        .contact-socials {
+            display: flex;
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            background: rgba(214, 158, 46, 0.1);
+            border: 1px solid rgba(214, 158, 46, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--accent-gold);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--gradient-accent);
+            color: var(--primary-dark);
+            transform: translateY(-5px);
+        }
+
+        .contact-form {
+            background: rgba(26, 54, 93, 0.4);
+            border: 1px solid rgba(214, 158, 46, 0.1);
+            border-radius: 25px;
+            padding: 50px 40px;
+        }
+
+        .contact-form h3 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: var(--white);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-light);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px 20px;
+            background: rgba(10, 22, 40, 0.6);
+            border: 1px solid rgba(214, 158, 46, 0.1);
+            border-radius: 12px;
+            color: var(--white);
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--text-gray);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            background: rgba(10, 22, 40, 0.8);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-group select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23d69e2e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 20px;
+        }
+
+        .form-group select option {
+            background: var(--primary-dark);
+            color: var(--white);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 18px;
+            background: var(--gradient-accent);
+            color: var(--primary-dark);
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(214, 158, 46, 0.4);
+        }
+
+        /* Footer */
+        .footer {
+            background: #050c15;
+            padding: 80px 20px 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .footer-about .logo {
+            margin-bottom: 20px;
+        }
+
+        .footer-about p {
+            color: var(--text-gray);
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .footer-title {
+            font-size: 1.2rem;
+            color: var(--white);
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-gold);
+            padding-left: 5px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .footer-contact-item i {
+            color: var(--accent-gold);
+            margin-top: 4px;
+        }
+
+        .footer-contact-item p,
+        .footer-contact-item a {
+            color: var(--text-gray);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-contact-item a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-bottom p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .footer-bottom-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        /* Floating Buttons */
+        .floating-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+        }
+
+        .float-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+        }
+
+        .whatsapp-btn:hover {
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+        }
+
+        .call-btn {
+            background: var(--gradient-accent);
+        }
+
+        .call-btn:hover {
+            box-shadow: 0 10px 30px rgba(214, 158, 46, 0.5);
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-blue);
+            border: 1px solid rgba(214, 158, 46, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+            transform: translateY(-5px);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .hero-security-showcase {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .about-image {
+                order: -1;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--primary-dark);
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+                border-top: 1px solid rgba(214, 158, 46, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-cta {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: flex;
+            }
+
+            .mobile-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .mobile-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .mobile-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+
+            .hero {
+                padding: 100px 20px 60px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+                letter-spacing: 1px;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-trust-strip {
+                gap: 8px;
+            }
+
+            .hero-trust-strip span {
+                font-size: 0.78rem;
+                padding: 8px 11px;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+
+            .stat-number {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-badge {
+                position: relative;
+                bottom: auto;
+                right: auto;
+                margin-top: 20px;
+            }
+
+            .about-image::before {
+                display: none;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .floating-buttons {
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .float-btn {
+                width: 55px;
+                height: 55px;
+                font-size: 1.3rem;
+            }
+
+            .back-to-top {
+                left: 20px;
+                bottom: 20px;
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+
+            .hero-badge {
+                font-size: 0.8rem;
+                padding: 8px 15px;
+            }
+
+            .stat-item {
+                padding: 10px;
+            }
+
+            .stat-number {
+                font-size: 1.8rem;
+            }
+
+            .stat-icon {
+                width: 55px;
+                height: 55px;
+                font-size: 1.4rem;
+            }
+
+            section {
+                padding: 60px 15px;
+            }
+
+            .service-card,
+            .why-card,
+            .industry-card {
+                padding: 25px 20px;
+            }
+
+            .contact-info,
+            .contact-form {
+                padding: 30px 25px;
+            }
+
+            .testimonial-card {
+                padding: 30px 25px;
+            }
+        }
+
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes scanLine {
+            0%, 100% { transform: translateY(0); opacity: 0; }
+            10%, 90% { opacity: 1; }
+            50% { transform: translateY(100vh); }
+        }
+
+        @keyframes cameraSweep {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100%); }
+        }
+
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Counter Animation */
+        .counter {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <img src="assets/spi-logo-mark.jpeg" alt="SPI Secure Solutions logo">
+                </div>
+                <span class="logo-text">SPI <span>Secure Solutions</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Get Free Quote</a>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="hero-badge">
+                <i class="fas fa-award"></i>
+                <span>Trusted by 100+ Customers</span>
+            </div>
+            <h1>PROFESSIONAL CCTV &<br><span>SECURITY SOLUTIONS</span></h1>
+            <p class="hero-subtitle">Trusted by 100+ Customers Across Telangana & Andhra Pradesh. Your safety is our priority with 4+ years of expertise in security installations.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-clipboard-check"></i>
+                    Get Free Site Survey
+                </a>
+                <a href="tel:+919603998358" class="btn btn-secondary">
+                    <i class="fas fa-phone"></i>
+                    Call Now
+                </a>
+                <a href="https://wa.me/919603998358" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp Us
+                </a>
+            </div>
+            <div class="hero-trust-strip" data-aos="fade-up" data-aos-delay="250">
+                <span><i class="fas fa-video"></i> CCTV Installation</span>
+                <span><i class="fas fa-moon"></i> Night Vision</span>
+                <span><i class="fas fa-mobile-screen-button"></i> Mobile Viewing</span>
+                <span><i class="fas fa-screwdriver-wrench"></i> AMC Support</span>
+            </div>
+        </div>
+        <div class="hero-security-showcase" aria-hidden="true">
+            <div class="camera-orbit">
+                <span class="security-chip chip-live"><i class="fas fa-circle"></i> Live Monitoring</span>
+                <span class="security-chip chip-night"><i class="fas fa-eye"></i> 24/7 Watch</span>
+                <div class="live-feed-grid">
+                    <div class="feed-tile"></div>
+                    <div class="feed-tile"></div>
+                    <div class="feed-tile"></div>
+                    <div class="feed-tile"></div>
+                </div>
+                <div class="camera-device"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="0">
+                <div class="stat-icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <div class="stat-number"><span class="counter" data-target="100">0</span>+</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                <div class="stat-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <div class="stat-number"><span class="counter" data-target="4">0</span>+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="stat-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="stat-number"><span class="counter" data-target="2">0</span></div>
+                <div class="stat-label">States Served</div>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="stat-icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Support Available</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="assets/spi-founder.jpeg" alt="SPI Secure Solutions founder">
+                    <div class="experience-badge">
+                        <span class="number">4+</span>
+                        <span class="text">Years Experience</span>
+                    </div>
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <span class="section-tag">About Us</span>
+                    <h2>Your Trusted <span>Security Partner</span></h2>
+                    <p>SPI Secure Solutions is a professional security and surveillance company with over 4 years of experience in providing comprehensive CCTV and security solutions. We have successfully completed 100+ installations across Telangana and Andhra Pradesh.</p>
+                    <p>We specialize in IP cameras, analog cameras, network surveillance systems, remote monitoring solutions, and security support services. Our expert team provides installation, maintenance, troubleshooting, and remote technical support for residential, commercial, and industrial clients.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Expert IP & Analog Solutions</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check"></i>
+                            <span>24/7 Remote Support</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Quality Products</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Affordable Pricing</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Quick Installation</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Customer Focused</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">Complete <span>Security Solutions</span></h2>
+                <p class="section-desc">We offer a comprehensive range of security services to protect your home, business, and assets.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>CCTV Camera Installation</h3>
+                    <p>Professional installation of high-quality CCTV cameras for complete surveillance coverage of your premises.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>IP Camera Installation</h3>
+                    <p>Advanced IP camera systems with high resolution, remote access, and intelligent features for modern security needs.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-cctv"></i>
+                    </div>
+                    <h3>Analog Camera Systems</h3>
+                    <p>Cost-effective analog camera solutions perfect for basic surveillance requirements with reliable performance.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Network Surveillance Solutions</h3>
+                    <p>Complete network-based surveillance infrastructure for seamless monitoring across multiple locations.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Remote Monitoring Setup</h3>
+                    <p>Access your cameras from anywhere in the world with our secure remote monitoring configuration services.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>NVR & DVR Installation</h3>
+                    <p>Expert setup of Network Video Recorders and Digital Video Recorders for reliable footage storage.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Security System Maintenance</h3>
+                    <p>Regular maintenance services to keep your security systems running at peak performance.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="service-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>Remote Technical Support</h3>
+                    <p>24/7 remote support for troubleshooting and resolving technical issues quickly and efficiently.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Troubleshooting & Service Support</h3>
+                    <p>Quick diagnosis and resolution of system issues with our experienced technical team.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Annual Maintenance Contracts</h3>
+                    <p>Comprehensive AMC packages ensuring hassle-free maintenance and priority support throughout the year.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Why Choose Us</span>
+                <h2 class="section-title">Reasons to <span>Trust Us</span></h2>
+                <p class="section-desc">We're committed to delivering excellence in security solutions with unmatched service quality.</p>
+            </div>
+            <div class="why-us-grid">
+                <div class="why-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="why-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h4>4+ Years Industry Experience</h4>
+                    <p>Proven track record of delivering quality security solutions since our inception.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="why-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h4>100+ Successful Installations</h4>
+                    <p>Trusted by over 100 clients across residential, commercial, and industrial sectors.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4>Expert IP & Analog Solutions</h4>
+                    <p>Specialized expertise in both modern IP and traditional analog camera systems.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="why-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4>Remote Support Across States</h4>
+                    <p>Serving clients throughout Telangana and Andhra Pradesh with remote technical assistance.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4>Quick Installation & Service</h4>
+                    <p>Fast turnaround times for installations and prompt service response.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="why-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h4>Affordable Pricing</h4>
+                    <p>Competitive rates without compromising on quality or service standards.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h4>Quality Products</h4>
+                    <p>We use only premium brands like Hikvision and Dahua for reliable performance.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="why-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>Customer Satisfaction Focused</h4>
+                    <p>Your security and satisfaction are our top priorities in every project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="industries">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Industries We Serve</span>
+                <h2 class="section-title">Security Solutions for <span>Every Sector</span></h2>
+                <p class="section-desc">From homes to enterprises, we provide tailored security solutions for diverse industries.</p>
+            </div>
+            <div class="industries-grid">
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="industry-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h4>Homes & Apartments</h4>
+                </div>
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="industry-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h4>Shops & Retail Stores</h4>
+                </div>
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="industry-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h4>Offices & IT Companies</h4>
+                </div>
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="industry-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h4>Warehouses</h4>
+                </div>
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="industry-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>Schools & Colleges</h4>
+                </div>
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="industry-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h4>Hospitals & Clinics</h4>
+                </div>
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="industry-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h4>Industrial Sites</h4>
+                </div>
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="industry-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h4>Commercial Buildings</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Products</span>
+                <h2 class="section-title">Premium <span>Security Equipment</span></h2>
+                <p class="section-desc">We partner with leading brands to bring you the best security products in the market.</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="product-image">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Hikvision IP Cameras</h3>
+                        <p>High-resolution IP cameras with advanced features including night vision, motion detection, and smart analytics.</p>
+                        <div class="product-features">
+                            <span class="product-feature">4K Resolution</span>
+                            <span class="product-feature">Night Vision</span>
+                            <span class="product-feature">Smart Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-image">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Dahua Security Cameras</h3>
+                        <p>Reliable Dahua cameras offering excellent image quality and durability for all environments.</p>
+                        <div class="product-features">
+                            <span class="product-feature">Weatherproof</span>
+                            <span class="product-feature">Wide Angle</span>
+                            <span class="product-feature">PoE Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>NVR Systems</h3>
+                        <p>Network Video Recorders with large storage capacity and remote viewing capabilities.</p>
+                        <div class="product-features">
+                            <span class="product-feature">8/16/32 Channel</span>
+                            <span class="product-feature">Cloud Backup</span>
+                            <span class="product-feature">Mobile App</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-image">
+                        <i class="fas fa-hdd"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>DVR Systems</h3>
+                        <p>Digital Video Recorders for analog camera setups with reliable recording and playback.</p>
+                        <div class="product-features">
+                            <span class="product-feature">4/8/16 Channel</span>
+                            <span class="product-feature">H.265+ Compression</span>
+                            <span class="product-feature">Remote Access</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-image">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Network Switches</h3>
+                        <p>PoE switches and network equipment for efficient IP camera connectivity.</p>
+                        <div class="product-features">
+                            <span class="product-feature">PoE Enabled</span>
+                            <span class="product-feature">Gigabit Speed</span>
+                            <span class="product-feature">Managed/Unmanaged</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-image">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Surveillance Accessories</h3>
+                        <p>Complete range of accessories including cables, connectors, power supplies, and mounting hardware.</p>
+                        <div class="product-features">
+                            <span class="product-feature">SMPS Power</span>
+                            <span class="product-feature">BNC/RJ45</span>
+                            <span class="product-feature">Mounting Kits</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our <span>Clients Say</span></h2>
+                <p class="section-desc">Don't just take our word for it. Here's what our satisfied customers have to say.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"SPI Secure Solutions installed 8 IP cameras at my retail store in Madhapur. The installation was clean and professional, completed within a single day. The picture quality is excellent and I can monitor everything from my phone even when I'm traveling. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <h5>Rajesh Kumar</h5>
+                            <span>Retail Store Owner, Madhapur</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"We had some issues with our existing CCTV system at our warehouse in Vijayawada. The SPI team provided excellent remote support and fixed the problem within hours. Their technical knowledge is impressive and their response time is outstanding. Now we have an AMC with them."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <div class="author-info">
+                            <h5>Priya Sharma</h5>
+                            <span>Warehouse Manager, Vijayawada</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"After getting quotes from multiple vendors, we chose SPI for our apartment complex security system. Their pricing was competitive and the quality of Hikvision cameras they installed is top-notch. The team was punctual, courteous, and explained everything clearly. Great service!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">VR</div>
+                        <div class="author-info">
+                            <h5>Venkat Reddy</h5>
+                            <span>Apartment Association President, Gachibowli</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                <p class="section-desc">Find answers to common questions about our security solutions and services.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="0">
+                    <div class="faq-question">
+                        <h4>Which is better, IP camera or analog camera?</h4>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>IP cameras offer higher resolution (up to 4K), better image quality, remote access capabilities, and smart features like motion detection and analytics. Analog cameras are more budget-friendly and work well for basic surveillance needs. We recommend IP cameras for most modern installations, but analog systems can be suitable for smaller setups with limited budgets.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="50">
+                    <div class="faq-question">
+                        <h4>How many days of recording backup will I get?</h4>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Recording backup depends on the hard disk capacity, number of cameras, resolution, and recording settings. Typically, a 1TB hard disk provides 7-15 days of backup for 4 cameras at 2MP resolution. We recommend 2TB or higher for longer retention. We'll help you choose the right storage based on your specific needs during the site survey.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h4>Do you provide remote support?</h4>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide 24/7 remote technical support for all our installations. Our team can remotely access your system (with your permission) to troubleshoot issues, configure settings, update firmware, and resolve most problems without an on-site visit. This ensures quick resolution and minimal downtime for your security system.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="faq-question">
+                        <h4>Do you serve outside Hyderabad?</h4>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! While we're based in Hyderabad, we serve clients throughout Telangana and Andhra Pradesh. We've completed installations in cities like Vijayawada, Visakhapatnam, Warangal, Tirupati, and many other locations. For remote areas, we also provide comprehensive remote support services.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h4>Do you provide warranty support?</h4>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all our products come with manufacturer warranty. Hikvision and Dahua cameras typically have 2-year warranty, and NVR/DVR systems come with 1-2 years warranty. We also offer Annual Maintenance Contracts (AMC) for extended support and preventive maintenance beyond the warranty period.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact <span>Us Today</span></h2>
+                <p class="section-desc">Ready to secure your premises? Get in touch for a free consultation and site survey.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's Talk Security</h3>
+                    <p>Have questions or ready to get started? Reach out to us through any of the following channels.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h5>Phone</h5>
+                            <a href="tel:+919603998358">+91 96039 98358</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h5>Email</h5>
+                            <a href="mailto:spisecuresolutions@gmail.com">spisecuresolutions@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h5>Location</h5>
+                            <p>Ayyappa Society, Madhapur,<br>Hyderabad, Telangana, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe-asia"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h5>Service Coverage</h5>
+                            <p>All over Telangana & Andhra Pradesh</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-socials">
+                        <a href="https://wa.me/919603998358" target="_blank" rel="noopener" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <h3>Request Free Site Survey</h3>
+                    <form action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Your Location *</label>
+                                <input type="text" id="location" name="location" placeholder="City / Area" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Required *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="cctv-installation">CCTV Camera Installation</option>
+                                <option value="ip-camera">IP Camera Installation</option>
+                                <option value="analog-camera">Analog Camera Systems</option>
+                                <option value="nvr-dvr">NVR/DVR Installation</option>
+                                <option value="remote-monitoring">Remote Monitoring Setup</option>
+                                <option value="maintenance">Security System Maintenance</option>
+                                <option value="amc">Annual Maintenance Contract</option>
+                                <option value="troubleshooting">Troubleshooting & Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your security requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Enquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <img src="assets/spi-logo-mark.jpeg" alt="SPI Secure Solutions logo">
+                        </div>
+                        <span class="logo-text">SPI <span>Secure Solutions</span></span>
+                    </a>
+                    <p>SPI Secure Solutions is a professional security and surveillance company providing comprehensive CCTV and security solutions across Telangana and Andhra Pradesh. With 4+ years of experience and 100+ successful installations, we are your trusted security partner.</p>
+                    <div class="contact-socials">
+                        <a href="https://wa.me/919603998358" target="_blank" rel="noopener" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-section">
+                    <h4 class="footer-title">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> CCTV Installation</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> IP Camera Systems</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> NVR/DVR Setup</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Remote Monitoring</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Maintenance & AMC</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Technical Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+919603998358">+91 96039 98358</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:spisecuresolutions@gmail.com">spisecuresolutions@gmail.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Ayyappa Society, Madhapur,<br>Hyderabad, Telangana</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sunday: On Appointment</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 SPI Secure Solutions. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/919603998358" target="_blank" rel="noopener" class="float-btn whatsapp-btn" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+919603998358" class="float-btn call-btn" title="Call Now">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out',
+            once: true,
+            offset: 100
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Navigation Toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        const animateCounter = (counter) => {
+            const target = +counter.getAttribute('data-target');
+            const duration = 2000;
+            const increment = target / (duration / 16);
+            let current = 0;
+
+            const updateCounter = () => {
+                current += increment;
+                if (current < target) {
+                    counter.textContent = Math.floor(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.textContent = target;
+                }
+            };
+
+            updateCounter();
+        };
+
+        // Intersection Observer for counters
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => {
+            counterObserver.observe(counter);
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all FAQ items
+                faqItems.forEach(faq => faq.classList.remove('active'));
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Back to Top Button
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetPosition = target.offsetTop - navHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Send enquiry details directly to WhatsApp.
+        const contactForm = document.querySelector('.contact-form form');
+        const whatsappNumber = '919603998358';
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const formData = new FormData(this);
+                const serviceSelect = this.querySelector('#service');
+                const serviceText = serviceSelect && serviceSelect.selectedOptions.length
+                    ? serviceSelect.selectedOptions[0].text
+                    : 'Not selected';
+                const enquiry = {
+                    name: (formData.get('name') || '').trim(),
+                    phone: (formData.get('phone') || '').trim(),
+                    email: (formData.get('email') || '').trim(),
+                    location: (formData.get('location') || '').trim(),
+                    service: serviceText,
+                    message: (formData.get('message') || '').trim()
+                };
+
+                const whatsappMessage = [
+                    'New CCTV Enquiry - SPI Secure Solutions',
+                    '',
+                    `Name: ${enquiry.name}`,
+                    `Phone: ${enquiry.phone}`,
+                    enquiry.email ? `Email: ${enquiry.email}` : null,
+                    `Location: ${enquiry.location}`,
+                    `Service Required: ${enquiry.service}`,
+                    enquiry.message ? `Message: ${enquiry.message}` : null
+                ].filter(Boolean).join('\n');
+
+                const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+                window.open(whatsappUrl, '_blank', 'noopener');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
+
