@@ -1,9 +1,9 @@
 ﻿// Initialize AOS
         AOS.init({
-            duration: 800,
+            duration: 500,
             easing: 'ease-out',
             once: true,
-            offset: 100
+            offset: 60
         });
 
         // Navbar Scroll Effect
@@ -134,6 +134,17 @@
                 card.style.transform = '';
             });
         });
+
+        // Compact testimonial auto slider.
+        const testimonialCards = document.querySelectorAll('.testimonial-slider .testimonial-card');
+        if (testimonialCards.length > 1) {
+            let activeTestimonial = 0;
+            setInterval(() => {
+                testimonialCards[activeTestimonial].classList.remove('active');
+                activeTestimonial = (activeTestimonial + 1) % testimonialCards.length;
+                testimonialCards[activeTestimonial].classList.add('active');
+            }, 3500);
+        }
 
         // Send enquiry details directly to WhatsApp.
         const contactForm = document.querySelector('.contact-form form');
